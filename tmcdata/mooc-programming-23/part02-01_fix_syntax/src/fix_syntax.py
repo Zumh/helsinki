@@ -15,6 +15,7 @@ Its value is now 1
 Have a nice day!
  """
 
+# Fix the program.
 number = int(input("Please type in a number: "))
 if number>100:
     print("The number was greater than one hundred")
