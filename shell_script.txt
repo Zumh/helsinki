@@ -6,3 +6,7 @@ This command uses the ls command to list all files with the .py extension in the
 The shell script folder=$(dirname "{}") extracts the parent directory of each file listed by ls. mkdir -p "$folder/src" creates a src directory within each parent directory, and mv "{}" "$folder/src" moves the file into the src directory.
 
 The -p option for mkdir is used to create the src directories as needed, and to avoid errors if the directories already exist. The && operator is used to run the mv command only if the mkdir command succeeds, i.e., if the src directory was successfully created.
+
+
+Extract python files and store them in moocpython2023 folder.
+ls tmcdata/mooc-programming-23/*/src/*.py | xargs -I {} sh -c 'file="{}"; parent=$(dirname "$(dirname "$file")"); cp "$file" "moocpython2023/$(basename "$parent")-$(basename "$file")"'
