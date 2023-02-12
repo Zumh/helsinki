@@ -1,22 +1,4 @@
-"""
-Please write a function named squared, 
-which takes a string argument and an integer argument, 
-and prints out a square of characters as specified by the examples below.
 
-squared("ab", 3)
-print()
-squared("aybabtu", 5)
-Sample output
-aba
-bab
-aba
-
-aybab
-tuayb
-abtua
-ybabt
-uayba
-"""
 def squared(a_string, number):
     row = 0 
     column = 0
@@ -39,6 +21,27 @@ def squared(a_string, number):
         square_string = ""
         column = 0
         row += 1
+if __name__ == "__main__":
 
-squared("ab", 3)
-squared("aybabtu", 5)
+    squared("ab", 3)
+    squared("aybabtu", 5)
+
+    """
+    Please write a function named squared, 
+    which takes a string argument and an integer argument, 
+    and prints out a square of characters as specified by the examples below.
+
+    squared("ab", 3)
+    print()
+    squared("aybabtu", 5)
+    Sample output
+    aba
+    bab
+    aba
+
+    aybab
+    tuayb
+    abtua
+    ybabt
+    uayba
+    """

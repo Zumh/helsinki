@@ -39,9 +39,7 @@ while index < len(a_string) and occurance_count < 2:
     end_dex = or_len + index
     if sub_string == a_string[index:end_dex]:
         occurance_count += 1
-		# update found_index
         found_index = index
-		# jump to the next len(sub_string) new character and not overlap
         index = end_dex
     index += 1
     
