@@ -1,0 +1,8 @@
+Here's an example of using the ls command and piping the output to xargs to move multiple Python files into different folders with a src folder:
+ls *.py | xargs -I {} sh -c 'folder=$(dirname "{}") && mkdir -p "$folder/src" && mv "{}" "$folder/src"'
+
+This command uses the ls command to list all files with the .py extension in the current directory, and pipes the output to xargs. The -I {} option tells xargs to replace {} with the input from ls one by one.
+
+The shell script folder=$(dirname "{}") extracts the parent directory of each file listed by ls. mkdir -p "$folder/src" creates a src directory within each parent directory, and mv "{}" "$folder/src" moves the file into the src directory.
+
+The -p option for mkdir is used to create the src directories as needed, and to avoid errors if the directories already exist. The && operator is used to run the mv command only if the mkdir command succeeds, i.e., if the src directory was successfully created.
