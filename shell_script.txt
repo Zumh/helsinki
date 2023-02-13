@@ -10,3 +10,5 @@ The -p option for mkdir is used to create the src directories as needed, and to 
 
 Extract python files and store them in moocpython2023 folder.
 ls tmcdata/mooc-programming-23/*/src/*.py | xargs -I {} sh -c 'file="{}"; parent=$(dirname "$(dirname "$file")"); cp "$file" "moocpython2023/$(basename "$parent")-$(basename "$file")"'
+# pygame need this file sudo apt install libsd12-dev
+https://github.com/pygame/pygame/issues/3260
