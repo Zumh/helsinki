@@ -27,27 +27,25 @@ robot = pygame.image.load("robot.png")
 
 # fill method fills window with colour passed as argument
 window.fill((0,0,0))
-
-
-# top left 
+"""
+# blit is use for drawing image with coordinate
 window.blit(robot, (0, 0))
-
-
+window.blit(robot, (300, 0))
+window.blit(robot, (100, 200))
+"""
 
 # put the robot image in the center of a window
 # get the dimensions of the robot in pixels unit
 width = robot.get_width()
 height = robot.get_height()
 
-# top right 
-window.blit(robot,(window_x - width, 0))
-
-# bottom right
-window.blit(robot,(window_x - width, window_y-height))
-
-# bottom left
-window.blit(robot,(0, window_y-height))
-
+# calculate x and y coordinate for robot image 
+mid_window_x = window_x//2
+mid_window_y = window_y//2
+mid_robot_width = width/2
+mid_robot_height = height/2
+# the difference of window's mid dimension and robot image gave us a center location
+window.blit(robot, (mid_window_x - mid_robot_width, mid_window_y - mid_robot_height))
 
 # flip update the window with contents
 pygame.display.flip()
