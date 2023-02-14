@@ -27,28 +27,24 @@ window.fill((0,0,0))
 
 
 # get the dimensions of the robot in pixels unit
-width = robot.get_width()
-height = robot.get_height()
+robot_width = robot.get_width()
+robot_height = robot.get_height()
 
-for y in range(10):
-    for i in range(10):
-        window.blit(robot, (50+50*i, height+y//8))
+for row_count in range(10):
+    # row_offset offset the pic start drawing 10 pixel to the right 
+    row_offset = row_count * 10
+    for column in range(10):
+        # column_offset push each image to the right by 40 pixel unit plus column 
+        # this allow us to maintain the distance of each robot
+        column_offset = 38 * column
+        
+        # we offset the height by 20px and we start drawing from height of robot pix position
+        window.blit(robot,(robot_width + row_offset + column_offset, robot_height+20*row_count))
 
-# x_offset = 0
-# y_offset = height
-# next_x_offset = width
-# amount = 10
-
-# for row in range(amount):
-#     x_offset = next_x_offset
-#     for column in range(amount):
-#         # top right 
-#         window.blit(robot,(x_offset, y_offset))
-
-#         x_offset += width
-#     y_offset += (height/4)
-#     next_x_offset += (width/5)
     
+
+
+
 
 
 # flip update the window with contents
