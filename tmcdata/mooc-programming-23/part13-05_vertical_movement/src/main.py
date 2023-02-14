@@ -19,8 +19,6 @@ window = pygame.display.set_mode((window_x,window_y))
 robot = pygame.image.load("robot.png")
 
 
-# fill method fills window with colour passed as argument
-window.fill((0,0,0))
 
 
 # get the dimensions of the robot in pixels unit
@@ -29,16 +27,9 @@ robot_height = robot.get_height()
 
 
 
-
-window.blit(robot,(x, y))
-
-
-
-
-
-# flip update the window with contents
-pygame.display.flip()
-
+x = 0
+y = 0
+is_up = False
 while True:
     # return list of event from events collected
     for event in pygame.event.get():
@@ -49,3 +40,26 @@ while True:
             # program exit with exit function
             # Ctrl + C can also be use here
             exit()
+
+    # fill method fills window with colour passed as argument
+    window.fill((0,0,0))
+
+    window.blit(robot,(0, y))
+
+    # flip update the window with contents
+    pygame.display.flip()
+    
+    bottom_left = window_y-robot_height
+    if bottom_left <= y:  
+        is_up = True
+    elif y <= 0:
+        is_up = False
+    # going up is true than we increment up direction
+    # if going up is false then we go down direction
+    if is_up: 
+        y -= 1
+    else:
+        y += 1
+    
+    pygame.time.Clock().tick(60)
+    
