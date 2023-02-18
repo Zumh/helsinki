@@ -36,8 +36,12 @@ def main():
                 
                 # update  the start of a robot position in random location if the mouse button position is within a robot dimension
                 if robot_x_0 <= mouse_x <= robot_x_1 and robot_y_0 <= mouse_y <= robot_y_1:
+                    
+                    # update robot starting point
                     robot_x_0 = randint(0,end_window_width)
                     robot_y_0 = randint(0,end_window_height)
+
+                    # update robot new end point
                     robot_x_1 = robot_x_0 + robot_width
                     robot_y_1 = robot_y_0 + robot_height
                     
