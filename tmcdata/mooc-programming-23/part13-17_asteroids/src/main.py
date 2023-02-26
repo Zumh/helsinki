@@ -120,7 +120,7 @@ def main():
        
         
             else:
-                # update  the start of a robot position in random location if the mouse button position is within a robot dimension
+          
                 # robot's from left, right sides and asteroid's left, right side are within the boundary.
                 # robot_y is the same as asteroid's bottom height
 
