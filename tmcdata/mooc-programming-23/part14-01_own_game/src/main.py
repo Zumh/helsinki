@@ -8,6 +8,8 @@ Description:
     p for Play, x for Quit and left or right  arrows for moving side to side.
     The game can be play till level 3. As the game level goes up, it get faster and faster.
     A person with most coins or score is winner while avoiding monsters.
+    Since we are not allow include other files. I suggest you play some kind of background music.
+    https://www.youtube.com/watch?v=ApreCAQiZ4w
 """
 # Complete your game here
 import pygame
@@ -179,6 +181,10 @@ class MonsterInvasion:
         self.level_up = False 
         self.max_level = 3
         self.play = False
+
+        self.red = 255
+        self.green = 255
+        self.blue = 255
         
         # load images and use those images to create object for each 
         
@@ -302,8 +308,9 @@ class MonsterInvasion:
 
     
     def draw_window(self):
-        # white background 
-        back_ground = (255,255,255)
+        # white background
+        
+        back_ground = (self.red, self.green, self.blue)
 
         self.window.fill(back_ground)
         if self.level > self.max_level:
@@ -353,6 +360,10 @@ class MonsterInvasion:
             # set level_up false 
             self.level_up = False
         elif self.play == True:
+            # make it flashy background
+            self.red = randint(0,255)
+            self.green = randint(0,255)
+            self.blue = randint(0,255) 
             # draw robot
             self.window.blit(self.robot.robot_pygame(), self.robot.robot_location())
 
