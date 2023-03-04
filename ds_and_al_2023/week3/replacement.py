@@ -60,12 +60,13 @@ def merge_sort(start, end):
     if start < end:
         mid = (start + end)//2
     
-        # left side
+        # left side spit till no more to split
         merge_sort(start, mid)
         
-        # right side 
+        # right side split till no more to split
         merge_sort(mid + 1, end)
         
+        # merge all of them back together
         merge(start, mid, mid+1, end)
 merge_sort(0, len(table)-1)
 
