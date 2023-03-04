@@ -10,20 +10,25 @@ Implement a function in the file that returns a list of numbers permutation.pycr
 , where the sums of all adjacent pairs of numbers are different.
 Explanation: In the codebase example
 """
-
 def create(n):
-    result = []
-    adjacent_sum = []
-    while len(result) < n:
-        current_sum = sum(first, second)
-        if current_sum not in adjacent_sum:
-            adjacent_sum.append(current_sum)
-        elif current_sum in adjacent_sum:
-            adjacent_sum = []
-            result = []
-         
+    # generate list of numbers from 1 to n
+    lst = list(range(1, n+1))
+
+
+    # iterate over the list and swap adjacent elements if their sum is equal to the previous sum
+    for i in range(1, n):
+        if lst[i] + lst[i-1] == lst[i-1] + lst[i-2]:
+            lst[i], lst[i-1] = lst[i-1], lst[i]
+
+    return lst
 if __name__ == "__main__":
 
     print(create(6)) # [3, 1, 6, 2, 4, 5]
     print(create(10)) # [7, 10, 3, 1, 5, 4, 8, 6, 9, 2]
     print(create(15)) # [9, 4, 6, 14, 15, 13, 12, 11, 5, 2, 3, 8, 1, 7, 10]
+
+"""
+Simply sort them in ascending order
+def create(n):
+    return [i for i in range(1, n+1)]
+"""
