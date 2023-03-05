@@ -1,0 +1,6 @@
+Get the titles of films released betweeen 1940 and 1950.
+Finnish - 
+SELECT nimi FROM Elokuvat WHERE vuosi BETWEEN 1940 AND 1950;
+
+English - 
+SELECT name FROM movies WHERE year BETWEEN 1940 AND 1950;

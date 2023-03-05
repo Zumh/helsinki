@@ -1,0 +1,8 @@
+Task:
+Search for the names of all movies in reverse alphabetical order. 
+
+- FINNISH 
+SELECT nimi FROM Elokuvat ORDER BY nimi DESC;
+- ENGLISH 
+
+SELECT name FROM movies ORDER BY name DESC; 

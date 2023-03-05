@@ -1,0 +1,3 @@
+Get the titles and release dates of all the movies.
+finnish - SELECT nimi, vuosi FROM Elokuvat;
+SELECT name, year FROM movies;

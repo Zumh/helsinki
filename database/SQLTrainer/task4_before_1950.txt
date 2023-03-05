@@ -1,0 +1,5 @@
+Get the titles of films released before 1950
+
+SELECT nimi FROM Elokuvat WHERE vuosi < 1950;
+
+SELECT name FROM movies WHERE year < 1950;

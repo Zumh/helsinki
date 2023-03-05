@@ -1,0 +1,8 @@
+Get the titles of all movies that weren't released in 1940.
+
+- FINNISH 
+SELECT nimi FROM Elokuvat WHERE vuosi != 1940;
+-model solution
+SELECT nimi FROM Elokuvat WHERE vuosi<>1940;
+- ENGLISH 
+SELECT name FROM movies WHERE year != 1940;

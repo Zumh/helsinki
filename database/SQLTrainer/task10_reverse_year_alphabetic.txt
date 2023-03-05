@@ -1,0 +1,11 @@
+Search for movie titles and release years primarily in reverse order by year of release, secondarily alphabetically.
+
+FINNISH - 
+
+SELECT nimi, vuosi FROM Elokuvat ORDER BY vuosi DESC, nimi;
+ 
+ENGLISH -
+SELECT name, year FROM movies ORDER BY year DESC, name;
+
+Solution:
+same as above answer

@@ -1,0 +1,7 @@
+
+get the titles of all the movies
+In finnish 
+SELECT nimi FROM Elokuvat;
+
+SELECT title FROM movies;
+

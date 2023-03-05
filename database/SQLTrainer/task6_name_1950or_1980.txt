@@ -1,0 +1,6 @@
+Get the titles of films released before 1950s or after 1980.
+
+Finnish - 
+SELECT nimi FROM Elokuvat WHERE vuosi < 1950 OR vuosi > 1980;
+English - 
+SELECT name FROM movies WHERE year < 1950 OR year > 1980;
