@@ -1,0 +1,6 @@
+Search for different fullnames.
+
+FINNISH- 
+SELECT DISTINCT etunimi, sukunimi FROM Nimet;
+ENGLISH - 
+SELECT DISTINCT 'first name', surname FROM Names;

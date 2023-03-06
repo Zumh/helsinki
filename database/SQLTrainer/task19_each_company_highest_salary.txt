@@ -1,0 +1,6 @@
+For each company, apply for the highest employee salary
+FINNISH - 
+SELECT yritys, MAX(palkka) FROM Tyontekijat GROUP BY yritys;
+
+ENGLISH - 
+SELECT enterprise, MAX(salary) FROM employees GROUP By enterprise;

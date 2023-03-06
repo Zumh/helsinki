@@ -1,0 +1,7 @@
+Get the maximum employee salary
+
+Finnish-
+SELECT MAX(palkka) FROM Tyontekijat;
+
+English-
+SELECT MAX(salary) FROM employees;

@@ -1,0 +1,7 @@
+Apply for the joint salary of employees.
+
+FINNISH-
+SELECT SUM(palkka) FROM Tyontekijat;
+
+ENGLISH-
+SLEECT SUM(salary) FROM employees;

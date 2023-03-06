@@ -1,0 +1,6 @@
+Get the number of employees.
+FINNISH-
+SELECT COUNT(*) FROM Tyontekijat;
+
+ENGLISH- 
+SELECT COUNT(*) FROM employees;

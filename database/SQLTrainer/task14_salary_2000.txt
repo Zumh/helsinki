@@ -1,0 +1,6 @@
+Search for the number of employees whose salary is more than 2000.
+FINNISH - 
+SELECT COUNT(*) FROM Tyontekijat WHERE palkka > 2000;
+
+ENGLISH - 
+SELECT COUNT(*) FROM employees HWERE salary > 2000;

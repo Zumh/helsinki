@@ -1,0 +1,6 @@
+Search for the nuymber of employees in each company
+FINNISH - 
+SELECT yritys, COUNT(*) FROM Tyontekijat GROUP BY yritys;
+
+ENGLISH - 
+SELECT enterprise, COUNT(*) FROM employees GROUP BY enterprise;

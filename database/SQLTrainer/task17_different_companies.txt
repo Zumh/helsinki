@@ -1,0 +1,6 @@
+Search for the number of different companies
+FINNISH - 
+SELECT COUNT(DISTINCT yritys) FROM Tyontekijat;
+
+ENGLISH - 
+SELECT COUNT(DISTINCT companies) FROM employees;
