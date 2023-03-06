@@ -1,0 +1,9 @@
+Indicate for each player what his best result is. ou can assume that each player has at least one result.
+
+FINNISH - 
+SELECT P.nimi, MAX(T.tulos) FROM Pelaajat P, Tulokset T WHERE P.id=T.pelaaja_id GROUP BY P.id;
+
+ENGLISH - 
+SELECT P.name, MAX(R.result) FROM Players P, Results R WHERE P.id=R.player_id GROUP BY P.id;
+
+

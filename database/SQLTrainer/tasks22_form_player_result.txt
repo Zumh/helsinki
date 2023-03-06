@@ -1,0 +1,7 @@
+Form a list of results that shows the results of Urolev.
+FINNISH - 
+SELECT P.nimi, T.tulos FROM Pelaajat P, Tulokset T WHERE P.id = T.pelaaja_id AND P.nimi = 'Uolevi';
+
+ENGLISH - 
+SELECT P.name, R.result FROM Players P, Results R WHERE P.id = R.player_id AND P.name = 'Uolevi';
+

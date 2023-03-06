@@ -1,0 +1,6 @@
+Find the best performance grade for each student. you can assume that each student has at least one performance. 
+ENGLISH - 
+SELECT S.name, MAX(C.grade) FROM Students S, Accomplishments A, Courses C WHERE C.id = A.course_id AND S.id = A.student_id GROUP BY S.id;
+
+FINNISH - 
+SELECT O.nimi, MAX(S.arvosana) FROM Opiskelijat O, Suoritukset S WHERE O.id=S.opiskelija_id GROUP BY O.id;

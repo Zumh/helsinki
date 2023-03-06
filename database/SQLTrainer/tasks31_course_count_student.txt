@@ -1,0 +1,7 @@
+Search each student for the number of credits. You can assume that each student has at least one performance. 
+Basically course count for students 
+
+ENGLISH - 
+SELECT S.name, COUNT(A.student_id) FROM Students S, Accomplishments A, Courses C WHERE C.id = A.course_id AND S.id = A.student_id GROUP BY S.name;
+
+FINNISH - SELECT O.nimi, COUNT(S.opiskelija_id) FROM Opiskelijat O, Kurssit K, Suoritukset S WHERE O.id=S.opiskelija_id AND K.id=S.kurssi_id GROUP BY O.nimi;

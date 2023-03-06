@@ -1,0 +1,8 @@
+Show the highest employee salary for companies where it is at least 5000. 
+FINNISH - 
+SELECT yritys, MAX(palkka) FROM Tyontekijat GROUP BY yritys HAVING MAX(palkka)>=5000;
+
+ENGLISH - 
+SELECT name, MAX(salary) FROM companies GROUP BY enterprise HAVING MAX(salary)>=5000;
+
+select employee with highest salary or atleast 5000.

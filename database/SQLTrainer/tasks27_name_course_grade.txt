@@ -1,0 +1,8 @@
+Search for the student's name, course name and grade for all performances.
+
+FINNISH - 
+
+SELECT O.nimi, K.nimi, S.arvosana FROM Opiskelijat O, Kurssit K, Suoritukset S WHERE O.id = S.opiskelija_id AND K.id = S.kurssi_id;
+
+ENGLISH - 
+SELECT S.name, C.name, A.grade FROM Students S, Courses C, Accomplishments A WHERE S.id = A.student_id AND C.id = A.course_id;

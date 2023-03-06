@@ -1,0 +1,7 @@
+For each player, indicate how many results they have. You can assume that each player has at least one result.
+
+FINNISH - 
+SELECT P.nimi, COUNT(T.tulos) FROM Pelaajat P, Tulokset T WHERE P.id=T.pelaaja_id GROUP BY P.id;
+
+ENGLISH - 
+SELECT P.name, COUNT(R.result) FROM Player P, Results R WHERE P.id = R.player_id GROUP BY P.id;

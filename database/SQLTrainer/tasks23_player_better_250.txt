@@ -1,0 +1,7 @@
+Form a list of results that show results that are better than 250.
+
+FINNISH - 
+SELECT P.nimi, T.tulos FROM Pelaajat P, Tulokset T WHERE P.id=T.pelaaja_id AND T.tulos>250;
+
+ENGLISH - 
+SELECT P.name, R.result FROM Players P, Results R WHERE P.id=R.player_id AND R.result > 250;

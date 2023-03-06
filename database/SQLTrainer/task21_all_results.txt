@@ -1,0 +1,7 @@
+Form a list of results that shows all the results.
+
+FINNISH - 
+SELECT Pelaajat.nimi, Tulokset.tulos FROM Pelaajat, Tulokset WHERE Pelaajat.id = Tulokset.pelaaja_id;
+
+ENGLISH - 
+SELECT P.name, R.result FROM Players P, Results R WHERE P.id = R.player_id;

@@ -1,0 +1,7 @@
+Search for the course name and grade of all Uolevi's performances.
+
+ENGLISH - 
+SELECT C.name, A.grade FROM Couse C, Accomplishments A, Students S WHERE S.name = 'Uolevi' AND S.id = A.student_id AND  C.id = A.course_id;
+
+FINNISH - 
+SELECT C.nimi, A.arvosana FROM Kurssit C, Suoritukset A, Opiskelijat S WHERE S.nimi= 'Uolevi' AND S.id = A.opiskelija_id AND  C.id = A.kurssi_id;

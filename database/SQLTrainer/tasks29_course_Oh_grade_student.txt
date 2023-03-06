@@ -1,0 +1,8 @@
+Search all Ohpe course performances for the student's name and grade.
+
+ENGLISH - 
+SELECT S.name, A.grade FROM Students S, Accomplishments A, Courses C WHERE C.id = A.course_id AND S.id = A.student_id AND C.name = 'Ohpe';
+
+FINNISH - 
+SELECT O.nimi, S.arvosana FROM Opiskelijat O, Kurssit K, Suoritukset S WHERE O.id=S.opiskelija_id AND K.id=S.kurssi_id AND K.nimi='Ohpe';
+

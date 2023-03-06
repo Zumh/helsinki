@@ -1,0 +1,6 @@
+search for all grades with a grade of 4 or 5. meaning between
+
+FINNISH - SELECT O.nimi, K.nimi, S.arvosana FROM Opiskelijat O, Kurssit K, Suoritukset S WHERE O.id=S.opiskelija_id AND K.id=S.kurssi_id AND S.arvosana BETWEEN 4 AND 5;
+
+ENGLISH - 
+SELECT S.name, C.name,A.grade FROM Students S, Accomplishments A, Courses C WHERE C.id = A.course_id AND S.id = A.student_id BETWEEN 4 AND 5;

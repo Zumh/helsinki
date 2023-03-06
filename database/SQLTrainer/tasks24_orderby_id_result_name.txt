@@ -1,0 +1,6 @@
+Form a list of results that shows all results arranged primarily inversely by score and secondarily by name. 
+
+FINNISH - 
+SELECT P.nimi, T.tulos FROM Pelaajat P, Tulokset T WHERE P.id=T.pelaaja_id ORDER BY T.tulos DESC, P.nimi;
+
+SELECT P.name, R.result FROM Players P, Results R WHERE P.id=R.player_id ORDER BY R.result DESC, P.name;
