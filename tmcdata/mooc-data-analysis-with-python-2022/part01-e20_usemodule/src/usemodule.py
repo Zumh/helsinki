@@ -8,6 +8,8 @@ except ModuleNotFoundError:
 
 def main():
     # Call the functions from here
-
+    triangle.area(2,3)
+    triangle.hypotenuse(2,3)
+    
 if __name__ == "__main__":
     main()
