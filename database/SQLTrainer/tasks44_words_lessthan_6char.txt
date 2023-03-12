@@ -1,0 +1,8 @@
+Search for all words that are less than 6 characters long.
+
+FINNISH - 
+SELECT sana FROM Sanat WHERE LENGTH(sana) < 6;
+
+ENGLISH - 
+SELECT word FROM Words WHERE LENGTH(word) < 6;
+

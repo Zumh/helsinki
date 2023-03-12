@@ -1,0 +1,10 @@
+Search for words organized primarily by length and secondarily alphabetically.
+
+FINNISH - 
+
+SELECT sana FROM Sanat ORDER BY LENGTH(sana), sana;
+
+ENGLISH - 
+
+SELECT word FROM Words ORDER BY LENGTH(word), word;
+

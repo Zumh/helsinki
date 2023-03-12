@@ -1,0 +1,11 @@
+Get the names of all courses that haven't been completed once.
+
+FINNISH - 
+SELECT K.nimi FROM Kurssit K LEFT JOIN Suoritukset S ON K.id=S.kurssi_id GROUP BY K.id HAVING COUNT(S.arvosana)=0;
+
+SELECT DISTINCT C.nimi FROM Kurssit C, Suoritukset A WHERE C.id NOT IN (SELECT kurssi_id FROM Suoritukset);
+
+ENGLISH - 
+SELECT C.name FROM Course C LEFT JOIN Accomplishment A ON C.id=A.course_id GROUP BY C.id HAVING COUNT(A.grade)=0;
+
+

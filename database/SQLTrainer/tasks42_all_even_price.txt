@@ -1,0 +1,9 @@
+Search for all products with an even price.
+
+FINNISH - 
+
+SELECT nimi, hinta FROM Tuotteet WHERE hinta%2 == 0;
+
+ENGLISH - 
+
+SELECT name, price FROM Product WHERE price%2 == 0;

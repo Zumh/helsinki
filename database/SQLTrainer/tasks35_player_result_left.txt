@@ -1,0 +1,8 @@
+For each player, indicate how many results they have (even if there are no results).
+FINNISH - 
+SELECT P.nimi, COUNT(T.tulos) FROM Pelaajat P LEFT JOIN Tulokset T ON P.id=T.pelaaja_id GROUP BY P.id;
+
+SELECT Players.nimi, COUNT(Results.id) FROM Pelaajat Players LEFT JOIN  Tulokset Results ON Players.id = Results.pelaaja_id GROUP BY Players.id;
+
+ENGLISH - 
+SELECT P.name, COUNT(R.result) FROM Players p Left JOIN Results R ON P.id = R.player_id GROUP BY P.id;

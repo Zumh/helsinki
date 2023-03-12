@@ -1,0 +1,9 @@
+Search destinations on all flights departing from Helsinki.
+
+FINNISH - 
+SELECT to_city.nimi FROM Lennot Flights, Kaupungit from_city, Kaupungit to_city WHERE from_city.nimi = 'Helsinki' AND from_city.id = flights.mista_id AND to_city.id = Flights.minne_id
+
+SELECT B.nimi FROM Kaupungit A, Kaupungit B, Lennot L WHERE L.mista_id=A.id AND L.minne_id=B.id AND A.nimi='Helsinki';
+
+ENGLISH - 
+SELCT B.name FROM Cities A, Cities B, Flights F WHERE F.from_id=A.id AND F.to_id = B.id AND A.name='Helsinki';

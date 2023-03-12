@@ -1,2 +1,13 @@
 Get information about all flight connections.
+FINNISH - 
+SELECT A.nimi, B.nimi FROM Kaupungit A, Kaupungit B, Lennot L WHERE L.mista_id=A.id AND L.minne_id=B.id;
 
+SELECT from_city.nimi, to_city.nimi FROM Lennot Flights JOIN Kaupungit from_city ON Flights.mista_id = from_city.id
+JOIN Kaupungit to_city ON Flights.minne_id = to_city.id
+
+ENGLISH - 
+
+SELECT A.name, B.name FROM Cities A, Cities B, Flights F WHERE F.from_id = A.id AND F.to_id = B.id;
+
+Notes - We can take same name as a city with different city name then assign their id to get different output with same length
+We can use Left join or right join if one table depends on the other or vice versa.

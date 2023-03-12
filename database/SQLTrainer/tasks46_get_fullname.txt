@@ -1,0 +1,9 @@
+Get the full name from the table 
+
+FINNISH - 
+
+SELECT etunimi || ' '  || sukunimi FROM Kayttajat;
+
+
+ENGLISH - 
+SELECT first_name || ' ' || surname FROM Users;

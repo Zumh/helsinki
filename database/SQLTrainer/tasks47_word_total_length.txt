@@ -1,0 +1,7 @@
+GET total length of word from words
+
+FINNISH - 
+	SELECT SUM(LENGTH(sana)) FROM Sanat;
+
+ENGLISH - 
+SELECT SUM(LENGTH(word)) FROM Words;

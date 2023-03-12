@@ -1,0 +1,6 @@
+FINNISH - 
+SELECT O.nimi, COUNT(S.arvosana) FROM Opiskelijat O LEFT JOIN Suoritukset S ON O.id=S.opiskelija_id GROUP BY O.id;
+
+ENGLISH - 
+
+SELECT S.name, COUNT(A.grade) FROM Students S LEFT JOIN Accomplishment A ON S.id=A.student_id GROUP BY S.id;

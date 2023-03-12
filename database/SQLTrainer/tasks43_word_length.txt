@@ -1,0 +1,10 @@
+Search for the length of each word in characters.
+
+FINNISH - 
+
+SELECT sana, LENGTH(sana) FROM Sanat;
+
+ENGLISH - 
+SELECT word, LENGTH(word) FROM Words;
+
+

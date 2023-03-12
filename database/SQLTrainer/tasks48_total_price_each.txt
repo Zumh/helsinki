@@ -1,0 +1,8 @@
+Calculate total price for each product 
+
+FINNISH - 
+
+SELECT tuote, hinta*maara FROM Tilaukset;
+
+ENGLISH - 
+SELECT product, price*amount FROM Orders;

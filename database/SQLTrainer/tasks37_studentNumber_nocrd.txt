@@ -1,0 +1,10 @@
+Number of students in each course (even if there is no credits)
+
+FINNISH - 
+SELECT K.nimi, COUNT(S.arvosana) FROM Kurssit K LEFT JOIN Suoritukset S ON K.id=S.kurssi_id GROUP BY K.id;
+
+SELECT C.nimi, COUNT(A.kurssi_id) FROM Kurssit C LEFT JOIN Suoritukset A ON C.id = A.kurssi_id GROUP BY C.id;
+
+ENGLISH - 
+
+SELECT C.name, COUNT(A.grade) FROM Course C LEFT JOIN Accomplishments A ON C.id=A.course_id GROUP BY C.id;

@@ -1,0 +1,12 @@
+
+Get the names of all courses that have been completed at least once.
+FINNISH - 
+SELECT DISTINCT K.nimi FROM Kurssit K, Suoritukset S WHERE K.id=S.kurssi_id;
+
+ENGILSH - 
+SELECT DISTINCT C.name FROM Courses C, Accomplishments A WHERE C.id = A.course_id;
+
+MY SOLUTION -
+# grou by course id then count the course at least one course is completed
+# it work but wrong thought flow
+SELECT C.nimi FROM Kurssit C, Suoritukset A WHERE C.id = A.kurssi_id GROUP BY C.id HAVING COUNT(*) >= 1;

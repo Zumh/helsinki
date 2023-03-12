@@ -1,0 +1,11 @@
+Get the titles of all movies released in a leap year. (A year is a leap year if it is divisible by 4. If a year is divisible by 100, it is a leap year only if it is also divisible by 400.)
+
+ENGLISH - 
+SELECT name FROM Movies WHERE year%4 = 0 AND (year % 100 <> 0 OR year % 400 = 0);
+
+
+FINNISH - 
+SELECT nimi FROM Elokuvat WHERE vuosi %4 = 0 AND (vuosi % 100 <> 0 OR vuosi % 400 = 0);
+
+
+

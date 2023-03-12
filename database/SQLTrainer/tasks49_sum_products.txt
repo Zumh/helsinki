@@ -1,0 +1,5 @@
+Calculate the sum of the total prices for all orders.
+ENGLISH - 
+SELECT SUM(price*amount) FROM Orders;
+FINNISH - 
+SELECT SUM(hinta*maara) FROM Tilaukset;

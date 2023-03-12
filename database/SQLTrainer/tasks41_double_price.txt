@@ -1,0 +1,6 @@
+Get the price of each product in double that.
+FINNISH - 
+SELECT nimi, hinta*2 FROM Tuotteet;
+
+ENGLISH - 
+SELECT name, price*2 FROM Product;

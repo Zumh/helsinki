@@ -1,0 +1,9 @@
+Get the names of all courses that haven't been completed once.
+
+FINNISH - 
+SELECT Cities.nimi, COUNT(Flights.mista_id) FROM Kaupungit Cities LEFT JOIN  Lennot Flights ON Cities.id = Flights.mista_id GROUP BY Cities.id;
+
+ENGLISH - 
+SLEECT Cities.name, COUNT(Flights.depart_id) FROM Cities Cities LEFT JOIN Flights ON Cities.id = Flights.depart_id GROUP BY Cities.id;
+
+
